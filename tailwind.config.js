@@ -5,10 +5,13 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				darkGray: '#1A1A1A',
-				bluredWhite: '#ECF0FD',
-				textBlue: '#1034A6',
+                darkGray: "#1A1A1A",
+                wineRed: "#A61034",
+                textBlue: "#1034A6",
 			},
+             fontFamily: {
+                nunito: "'Nunito Sans', sans-serif",
+            },
 		},
 	},
 	variants: {

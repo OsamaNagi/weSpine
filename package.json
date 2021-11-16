@@ -16,5 +16,8 @@
     "tailbuild": "^1.1.1",
     "tailwindcss": "^2.2.19",
     "vite": "^2.6.14"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.3.0"
   }
 }

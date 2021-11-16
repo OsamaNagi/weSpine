@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="css/styles.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+	<body class="bg-white">
+		<!-- Debug border-2 border-red-500 -->
+		<main class="flex flex-col w-screen h-screen overflow-x-hidden">
+			<!-- Navbar -->
+			<nav class="flex items-center justify-between px-20 py-2">
+				<!-- Logo -->
+				<div class="flex items-center w-full max-w-md space-x-3">
+					<img class="h-10" src="img/logo.png" alt="WeSpine" />
+					<div class="w-[0.07rem] h-8 bg-gray-500"></div>
+					<img class="h-10" src="img/the-german-logo.png" alt="WeSpine" />
+				</div>
+
+				<!-- Main menu items and Phone number-->
+				<div class="flex items-center justify-between w-full">
+					<div class="flex items-center flex-grow space-x-12">
+						<a href="#" class="text-sm font-medium text-gray-900">Home</a>
+						<a href="#" class="text-sm font-medium text-purplishBlue-500">Blog</a>
+						<a href="#" class="text-sm font-medium text-gray-900">Our Team</a>
+						<a href="#" class="text-sm font-medium text-gray-900">Contact</a>
+					</div>
+
+					<!-- Phone -->
+					<button class="flex items-center px-3 py-2 space-x-1 rounded shadow bg-wineRed">
+						<svg class="w-4 h-4 text-gray-100 fill-current" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+							></path>
+						</svg>
+						<span class="text-sm leading-4 tracking-wide text-gray-100">+201095177771</span>
+					</button>
+				</div>
+			</nav>
+
+			<!-- Secondary nav -->
+			<div class="flex items-center px-20 py-3 space-x-10 bg-purplishBlue-500">
+				<a href="#" class="text-xs tracking-wide text-gray-100">Who are we?</a>
+				<a href="#" class="text-xs tracking-wide text-gray-100">Our Concept</a>
+				<a href="#" class="text-xs tracking-wide text-gray-100">Prevention</a>
+				<a href="#" class="text-xs tracking-wide text-gray-100">Diagnosis</a>
+				<a href="#" class="text-xs tracking-wide text-gray-100">Thearpy</a>
+				<a href="#" class="text-xs tracking-wide text-gray-100">After Care</a>
+				<a href="#" class="text-xs tracking-wide text-gray-100">Our Team</a>
+			</div>
+
+			<!-- Hero -->
+			<div style="background: url(img/hero.png); background-size: cover" class="relative w-full min-h-[18rem] pl-32 overflow-hidden">
+				<!-- Overlay -->
+				<div class="absolute inset-0 w-full h-full overflow-hidden opacity-60 to-transparent from-black bg-gradient-to-r"></div>
+
+				<div class="relative flex items-center w-full h-full overflow-hidden">
+					<h1 class="text-2xl font-semibold leading-4 tracking-wide text-white">Explore We Spine Articles</h1>
+				</div>
+			</div>
+
+			<!-- Posts -->
+			<section class="relative self-center w-full px-24 mt-5 space-y-10">
+				<!-- Featured Post -->
+				<div class="flex mt-5 space-x-5">
+					<div class="">
+						<img src="img/doctor.jpg" alt="Some image" class="object-cover rounded-lg" />
+					</div>
+
+					<div class="flex flex-col space-y-5">
+						<!-- Tags -->
+						<div class="flex items-center space-x-2">
+							<a href="#" class="flex-grow-0 px-4 py-2 tracking-wide rounded bg-purplishBlue-100 text-purplishBlue-500">The Spine</a>
+						</div>
+
+						<!-- Content -->
+						<div class="flex flex-col space-y-3">
+							<!-- Bolder text -->
+							<p class="text-sm font-semibold tracking-wide">A Comparative Study of a Novel Postural Garment Versus Exercise for Women with Nonspecific Cervical Pain: A Randomized Cross-over Trial</p>
+							<!-- slim text -->
+							<p class="text-xs tracking-wide">
+								Avellanet, Merce MD, PhDa; Boada-Pladellorens, Anna MDa; Pages, Esther MD, PhDa; Dorca, Aleix PhDb; Sabria, Betlem PhDb; Pfeifer, Michael MDc; Gea, Elvira PharmDd,e
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Other posts -->
+				<div class="grid grid-flow-col grid-cols-3 gap-14">
+					<!-- post 1 -->
+					<div class="flex flex-col space-y-3">
+						<img src="img/doctor.jpg" style="width: 470px; height: 410px" alt="Some image" class="object-cover rounded-lg" />
+						<!-- Tags -->
+						<div class="flex items-center space-x-2">
+							<a href="#" class="flex-grow-0 px-4 py-2 tracking-wide text-gray-100 rounded bg-wineRed">The Spine</a>
+						</div>
+						<!-- Content -->
+						<div class="flex flex-col space-y-2">
+							<!-- Bolder text -->
+							<p class="text-sm font-semibold leading-5 tracking-wide">
+								A Comparative Study of a Novel Postural Garment Versus Exercise for Women with Nonspecific Cervical Pain: A Randomized Cross-over Trial
+							</p>
+							<!-- slim text -->
+							<p class="text-xs leading-5 tracking-wide">
+								Avellanet, Merce MD, PhDa; Boada-Pladellorens, Anna MDa; Pages, Esther MD, PhDa; Dorca, Aleix PhDb; Sabria, Betlem PhDb; Pfeifer, Michael MDc; Gea, Elvira PharmDd,e
+							</p>
+						</div>
+
+						<button style="width: fit-content" class="flex items-center justify-center flex-grow-0 px-3 py-2 bg-transparent border-2 rounded-lg border-purplishBlue-500 text-purplishBlue-500">
+							Read Article
+						</button>
+					</div>
+					<!-- post 1 -->
+					<div class="flex flex-col space-y-3">
+						<img src="img/doctor.jpg" style="width: 470px; height: 410px" alt="Some image" class="object-cover rounded-lg" />
+						<!-- Tags -->
+						<div class="flex items-center space-x-2">
+							<a href="#" class="flex-grow-0 px-4 py-2 tracking-wide text-gray-100 rounded bg-wineRed">The Spine</a>
+						</div>
+						<!-- Content -->
+						<div class="flex flex-col space-y-2">
+							<!-- Bolder text -->
+							<p class="text-sm font-semibold leading-5 tracking-wide">
+								A Comparative Study of a Novel Postural Garment Versus Exercise for Women with Nonspecific Cervical Pain: A Randomized Cross-over Trial
+							</p>
+							<!-- slim text -->
+							<p class="text-xs leading-5 tracking-wide">
+								Avellanet, Merce MD, PhDa; Boada-Pladellorens, Anna MDa; Pages, Esther MD, PhDa; Dorca, Aleix PhDb; Sabria, Betlem PhDb; Pfeifer, Michael MDc; Gea, Elvira PharmDd,e
+							</p>
+						</div>
+
+						<button style="width: fit-content" class="flex items-center justify-center flex-grow-0 px-3 py-2 bg-transparent border-2 rounded-lg border-purplishBlue-500 text-purplishBlue-500">
+							Read Article
+						</button>
+					</div>
+					<!-- post 1 -->
+					<div class="flex flex-col space-y-3">
+						<img src="img/doctor.jpg" style="width: 470px; height: 410px" alt="Some image" class="object-cover rounded-lg" />
+						<!-- Tags -->
+						<div class="flex items-center space-x-2">
+							<a href="#" class="flex-grow-0 px-4 py-2 tracking-wide text-gray-100 rounded bg-wineRed">The Spine</a>
+						</div>
+						<!-- Content -->
+						<div class="flex flex-col space-y-2">
+							<!-- Bolder text -->
+							<p class="text-sm font-semibold leading-5 tracking-wide">
+								A Comparative Study of a Novel Postural Garment Versus Exercise for Women with Nonspecific Cervical Pain: A Randomized Cross-over Trial
+							</p>
+							<!-- slim text -->
+							<p class="text-xs leading-5 tracking-wide">
+								Avellanet, Merce MD, PhDa; Boada-Pladellorens, Anna MDa; Pages, Esther MD, PhDa; Dorca, Aleix PhDb; Sabria, Betlem PhDb; Pfeifer, Michael MDc; Gea, Elvira PharmDd,e
+							</p>
+						</div>
+
+						<button style="width: fit-content" class="flex items-center justify-center flex-grow-0 px-3 py-2 bg-transparent border-2 rounded-lg border-purplishBlue-500 text-purplishBlue-500">
+							Read Article
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

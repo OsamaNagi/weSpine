@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tailbuild public/css/styles.css --files=\"./public/**/*.html\" --watch",
-    "serve": "live-server public --port=8080"
+    "dev": "vite"
   },
   "keywords": [],
   "author": "",
@@ -16,8 +15,5 @@
     "tailbuild": "^1.1.1",
     "tailwindcss": "^2.2.19",
     "vite": "^2.6.14"
-  },
-  "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.3.0"
   }
 }

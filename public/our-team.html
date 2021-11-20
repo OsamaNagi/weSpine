@@ -62,39 +62,89 @@
 			</div>
 
 			<!-- Hero -->
-			<div style="background: url(img/hero.png); background-size: cover" class="relative w-full min-h-screen">
+			<div style="background: url(img/hero.png); background-size: cover" class="relative w-full min-h-[18rem] px-6 lg:pr-0 lg:pl-32">
 				<!-- Overlay -->
 				<div class="absolute inset-0 w-full h-full overflow-hidden opacity-60 to-transparent from-black bg-gradient-to-r"></div>
 
-				<div class="relative flex justify-center w-full h-full px-4 pt-16 overflow-hidden md:px-0">
-					<!-- Modal -->
-					<div class="w-full max-w-[34rem] bg-white p-4 flex justify-between flex-col rounded-lg max-h-[20rem]">
-						<!-- Video -->
-						<iframe
-							class="w-full h-full rounded-md"
-							src="https://www.youtube.com/embed/RNUpMNd_u1U"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-
-						<!-- slung -->
-						<div class="flex items-center justify-center w-full pt-2 space-x-2 text-center">
-							<h2 class="text-xs md:text-base">Watch the short video to know how we spine</h2>
-
-							<a class="text-xs text-blue-600" href="#">Read more</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Join Button -->
-				<div class="absolute flex flex-col items-center justify-center w-full space-y-2 bottom-5">
-					<p class="text-sm text-gray-100">Join the We Spine Club</p>
-					<button class="px-5 py-2 text-xs bg-gray-100 rounded text-purplishBlue-500 hover:bg-wineRed hover:text-gray-100 hover:cursor-pointer">Join Now</button>
+				<div class="relative flex items-center w-full h-full overflow-hidden">
+					<h1 class="text-2xl font-semibold leading-4 tracking-wide text-white">Our team</h1>
 				</div>
 			</div>
 
+			<!-- Posts -->
+			<section class="relative self-center w-full px-5 space-y-10 lg:px-24 lg:mt-5">
+				<!-- Meet our team -->
+				<div class="flex flex-col items-center justify-center w-full mt-10 space-y-2">
+					<h1 class="text-lg font-semibold">Meet Our Team</h1>
+					<p class="w-full max-w-md text-sm text-center">Returned pain that comes on all at once and lasts no greater than six weeks (acute) can be resulting from a fall or heavy lifting.</p>
+				</div>
+				<!-- cards -->
+				<div class="grid grid-cols-1 mt-10 gap-7 lg:grid-cols-2 lg:gap-28">
+					<!-- Team member Card -->
+					<div class="flex flex-col rounded shadow group">
+						<img src="img/medical-student-with-yellow-folder-surgery.png" class="w-[580px] object-cover h-[516px]" alt="" />
+						<!-- Info -->
+						<div class="flex items-center justify-between px-5 py-4 border group-hover:bg-purplishBlue-500">
+							<div class="flex flex-col space-y-1">
+								<p class="text-xs group-hover:text-gray-100">Doctor</p>
+								<h3 class="text-sm tracking-tight group-hover:text-gray-100">Dr. Ahmed Nagi</h3>
+							</div>
+
+							<svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-purplishBlue-500 group-hover:text-gray-100 h-7 w-7" version="1.1" viewBox="0 0 24 24">
+								<path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M6,13H14L10.5,16.5L11.92,17.92L17.84,12L11.92,6.08L10.5,7.5L14,11H6V13Z" />
+							</svg>
+						</div>
+					</div>
+
+					<!-- Team member Card -->
+					<div class="flex flex-col rounded shadow group">
+						<img src="img/medical-student-with-yellow-folder-surgery.png" class="w-[580px] object-cover h-[516px]" alt="" />
+						<!-- Info -->
+						<div class="flex items-center justify-between px-5 py-4 border group-hover:bg-purplishBlue-500">
+							<div class="flex flex-col space-y-1">
+								<p class="text-xs group-hover:text-gray-100">Doctor</p>
+								<h3 class="text-sm tracking-tight group-hover:text-gray-100">Dr. Ahmed Nagi</h3>
+							</div>
+
+							<svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-purplishBlue-500 group-hover:text-gray-100 h-7 w-7" version="1.1" viewBox="0 0 24 24">
+								<path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M6,13H14L10.5,16.5L11.92,17.92L17.84,12L11.92,6.08L10.5,7.5L14,11H6V13Z" />
+							</svg>
+						</div>
+					</div>
+
+					<!-- Team member Card -->
+					<div class="flex flex-col rounded shadow group">
+						<img src="img/medical-student-with-yellow-folder-surgery.png" class="w-[580px] object-cover h-[516px]" alt="" />
+						<!-- Info -->
+						<div class="flex items-center justify-between px-5 py-4 border group-hover:bg-purplishBlue-500">
+							<div class="flex flex-col space-y-1">
+								<p class="text-xs group-hover:text-gray-100">Doctor</p>
+								<h3 class="text-sm tracking-tight group-hover:text-gray-100">Dr. Ahmed Nagi</h3>
+							</div>
+
+							<svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-purplishBlue-500 group-hover:text-gray-100 h-7 w-7" version="1.1" viewBox="0 0 24 24">
+								<path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M6,13H14L10.5,16.5L11.92,17.92L17.84,12L11.92,6.08L10.5,7.5L14,11H6V13Z" />
+							</svg>
+						</div>
+					</div>
+
+					<!-- Team member Card -->
+					<div class="flex flex-col rounded shadow group">
+						<img src="img/medical-student-with-yellow-folder-surgery.png" class="w-[580px] object-cover h-[516px]" alt="" />
+						<!-- Info -->
+						<div class="flex items-center justify-between px-5 py-4 border group-hover:bg-purplishBlue-500">
+							<div class="flex flex-col space-y-1">
+								<p class="text-xs group-hover:text-gray-100">Doctor</p>
+								<h3 class="text-sm tracking-tight group-hover:text-gray-100">Dr. Ahmed Nagi</h3>
+							</div>
+
+							<svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-purplishBlue-500 group-hover:text-gray-100 h-7 w-7" version="1.1" viewBox="0 0 24 24">
+								<path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M6,13H14L10.5,16.5L11.92,17.92L17.84,12L11.92,6.08L10.5,7.5L14,11H6V13Z" />
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
 			<footer class="flex flex-col w-full h-full mt-16 bg-purplishBlue-100 debug-screens">
 				<!-- footer body -->
 				<div class="grid grid-flow-row grid-cols-1 gap-8 p-6 xl:px-24 lg:grid-flow-col lg:grid-cols-4 xl:grid-cols-5">

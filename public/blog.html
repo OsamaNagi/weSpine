@@ -12,27 +12,27 @@
 	</head>
 	<body class="bg-white">
 		<!-- Debug border-2 border-red-500 -->
-		<main class="flex flex-col w-screen h-screen overflow-x-hidden">
+		<main class="flex flex-col w-screen h-screen overflow-x-hidden debug-screens">
 			<!-- Navbar -->
-			<nav class="flex items-center justify-between px-20 py-2">
+			<nav class="flex items-center justify-between flex-grow px-5 py-2 xl:px-20">
 				<!-- Logo -->
-				<div class="flex items-center w-full max-w-md space-x-3">
+				<div class="flex items-center w-full max-w-md space-x-3 lg:max-w-sm">
 					<img class="h-10" src="img/logo.png" alt="WeSpine" />
 					<div class="w-[0.07rem] h-8 bg-gray-500"></div>
 					<img class="h-10" src="img/the-german-logo.png" alt="WeSpine" />
 				</div>
 
 				<!-- Main menu items and Phone number-->
-				<div class="flex items-center justify-between w-full">
+				<div class="items-center justify-between hidden w-full lg:flex lg:space-x-5 lx:space-x-0">
 					<div class="flex items-center flex-grow space-x-12">
 						<a href="#" class="text-sm font-medium text-gray-900">Home</a>
 						<a href="#" class="text-sm font-medium text-purplishBlue-500">Blog</a>
-						<a href="#" class="text-sm font-medium text-gray-900">Our Team</a>
+						<a href="#" class="text-sm font-medium text-gray-900 whitespace-nowrap">Our Team</a>
 						<a href="#" class="text-sm font-medium text-gray-900">Contact</a>
 					</div>
 
 					<!-- Phone -->
-					<button class="flex items-center px-3 py-2 space-x-1 rounded shadow bg-wineRed">
+					<button class="items-center hidden px-3 py-2 space-x-1 rounded shadow lg:flex bg-wineRed">
 						<svg class="w-4 h-4 text-gray-100 fill-current" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 							<path
 								d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
@@ -41,21 +41,28 @@
 						<span class="text-sm leading-4 tracking-wide text-gray-100">+201095177771</span>
 					</button>
 				</div>
+
+				<!-- Burger menu icon -->
+				<div class="flex flex-col items-center justify-between w-10 h-10 p-2 border-2 rounded-full border-purplishBlue-500 lg:hidden">
+					<span class="w-full h-[2px] bg-purplishBlue-500"></span>
+					<span class="w-full h-[2px] bg-purplishBlue-500"></span>
+					<span class="w-full h-[2px] bg-purplishBlue-500"></span>
+				</div>
 			</nav>
 
 			<!-- Secondary nav -->
-			<div class="flex items-center px-20 py-3 space-x-10 bg-purplishBlue-500">
-				<a href="#" class="text-xs tracking-wide text-gray-100">Who are we?</a>
-				<a href="#" class="text-xs tracking-wide text-gray-100">Our Concept</a>
-				<a href="#" class="text-xs tracking-wide text-gray-100">Prevention</a>
-				<a href="#" class="text-xs tracking-wide text-gray-100">Diagnosis</a>
-				<a href="#" class="text-xs tracking-wide text-gray-100">Thearpy</a>
-				<a href="#" class="text-xs tracking-wide text-gray-100">After Care</a>
-				<a href="#" class="text-xs tracking-wide text-gray-100">Our Team</a>
+			<div class="flex items-center w-full px-4 py-4 space-x-4 overflow-x-scroll no-scrollbar lg:px-20 lg:py-5 lg:space-x-10 bg-purplishBlue-500">
+				<a href="#" class="text-xs tracking-wide text-gray-100 whitespace-nowrap secondary-menu-active">Who are we?</a>
+				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">Our Concept</a>
+				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">Prevention</a>
+				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">Diagnosis</a>
+				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">Thearpy</a>
+				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">After Care</a>
+				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">Our Team</a>
 			</div>
 
 			<!-- Hero -->
-			<div style="background: url(img/hero.png); background-size: cover" class="relative w-full min-h-[18rem] pl-32 overflow-hidden">
+			<div style="background: url(img/hero.png); background-size: cover" class="relative w-full min-h-[18rem] px-6 lg:pr-0 lg:pl-32">
 				<!-- Overlay -->
 				<div class="absolute inset-0 w-full h-full overflow-hidden opacity-60 to-transparent from-black bg-gradient-to-r"></div>
 
@@ -65,21 +72,19 @@
 			</div>
 
 			<!-- Posts -->
-			<section class="relative self-center w-full px-24 mt-5 space-y-10">
+			<section class="relative self-center w-full px-5 space-y-10 lg:px-24 lg:mt-5">
 				<!-- Featured Post -->
-				<div class="flex mt-5 space-x-5">
-					<div class="">
-						<img src="img/doctor.jpg" alt="Some image" class="object-cover rounded-lg" />
-					</div>
+				<div class="flex flex-col mt-5 space-x-5 space-y-5 lg:flex-row">
+					<img src="img/medical-student-with-yellow-folder-surgery-2x.png" alt="Some image" class="object-cover rounded-lg lg:w-[650px] h-[380px] w-full" />
 
 					<div class="flex flex-col space-y-5">
 						<!-- Tags -->
 						<div class="flex items-center space-x-2">
-							<a href="#" class="flex-grow-0 px-4 py-2 tracking-wide rounded bg-purplishBlue-100 text-purplishBlue-500">The Spine</a>
+							<a href="#" class="flex-grow-0 px-4 py-2 tracking-wide rounded-lg bg-purplishBlue-100 text-purplishBlue-500">The Spine</a>
 						</div>
 
 						<!-- Content -->
-						<div class="flex flex-col space-y-3">
+						<div class="flex flex-col flex-grow space-y-3">
 							<!-- Bolder text -->
 							<p class="text-sm font-semibold tracking-wide">A Comparative Study of a Novel Postural Garment Versus Exercise for Women with Nonspecific Cervical Pain: A Randomized Cross-over Trial</p>
 							<!-- slim text -->
@@ -91,12 +96,12 @@
 				</div>
 
 				<!-- Other posts -->
-				<div class="grid grid-flow-col grid-cols-3 gap-14">
+				<div class="grid w-full grid-flow-row grid-cols-1 lg:grid-flow-col lg:grid-cols-3 gap-14">
 					<!-- post 1 -->
-					<div class="flex flex-col space-y-3">
-						<img src="img/doctor.jpg" style="width: 470px; height: 410px" alt="Some image" class="object-cover rounded-lg" />
+					<div class="flex flex-col items-center space-y-3">
+						<img src="img/physiotherapist-working-with-male-patient-rehabilitation-center.png" alt="Some image" class="object-cover rounded-lg lg:w-[470px] h-[410px] w-full" />
 						<!-- Tags -->
-						<div class="flex items-center space-x-2">
+						<div class="flex items-center self-start space-x-2">
 							<a href="#" class="flex-grow-0 px-4 py-2 tracking-wide text-gray-100 rounded bg-wineRed">The Spine</a>
 						</div>
 						<!-- Content -->
@@ -116,10 +121,10 @@
 						</button>
 					</div>
 					<!-- post 1 -->
-					<div class="flex flex-col space-y-3">
-						<img src="img/doctor.jpg" style="width: 470px; height: 410px" alt="Some image" class="object-cover rounded-lg" />
+					<div class="flex flex-col items-center space-y-3">
+						<img src="img/physiotherapist-working-with-female-patient-rehabilitation-center-closeup.png" alt="Some image" class="object-cover rounded-lg lg:w-[470px] h-[410px] w-full" />
 						<!-- Tags -->
-						<div class="flex items-center space-x-2">
+						<div class="flex items-center self-start space-x-2">
 							<a href="#" class="flex-grow-0 px-4 py-2 tracking-wide text-gray-100 rounded bg-wineRed">The Spine</a>
 						</div>
 						<!-- Content -->
@@ -139,10 +144,14 @@
 						</button>
 					</div>
 					<!-- post 1 -->
-					<div class="flex flex-col space-y-3">
-						<img src="img/doctor.jpg" style="width: 470px; height: 410px" alt="Some image" class="object-cover rounded-lg" />
+					<div class="flex flex-col items-center space-y-3">
+						<img
+							src="img/adult-man-trains-muscle-strength-with-professional-doctor-modern-rehabilitation-clinic-phy.png"
+							alt="Some image"
+							class="object-cover rounded-lg lg:w-[470px] h-[410px] w-full"
+						/>
 						<!-- Tags -->
-						<div class="flex items-center space-x-2">
+						<div class="flex items-center self-start space-x-2">
 							<a href="#" class="flex-grow-0 px-4 py-2 tracking-wide text-gray-100 rounded bg-wineRed">The Spine</a>
 						</div>
 						<!-- Content -->
@@ -162,7 +171,146 @@
 						</button>
 					</div>
 				</div>
+
+				<!-- doctors -->
+				<div class="flex flex-col mt-10 space-y-5 lg:mt-16">
+					<h1 class="text-lg font-semibold text-gray-900">Management of Primary Spondylodiscitis</h1>
+					<div class="grid grid-flow-row gap-10 lg:grid-flow-col lg:grid-cols-4 lg:place-content-start place-items-center">
+						<!-- Post -->
+						<div class="flex flex-col space-y-3 flex-grow items-center max-w-[370px]">
+							<!-- Post Image -->
+							<img src="img/medical-student-with-yellow-folder-surgery-2x.png" class="w-full h-[240px] rounded-lg object-cover" />
+							<h2 class="font-semibold">Management of Primary Spondylodiscitis</h2>
+							<p class="block text-sm">
+								Avellanet, Merce MD, PhDa; Boada-Pladellorens, Anna MDa; Pages, Esther MD, PhDa; Dorca, Aleix PhDb; Sabria, Betlem PhDb; Pfeifer, Michael MDc; Gea, Elvira PharmDd,e
+							</p>
+							<a href="#" class="self-start font-semibold underline text-purplishBlue-500">Read more</a>
+						</div>
+
+						<!-- Post -->
+						<div class="flex flex-col space-y-3 flex-grow items-center max-w-[370px]">
+							<!-- Post Image -->
+							<img src="img/medical-student-with-yellow-folder-surgery-2x.png" class="w-full h-[240px] rounded-lg object-cover" />
+							<h2 class="font-semibold">Management of Primary Spondylodiscitis</h2>
+							<p class="block text-sm">
+								Avellanet, Merce MD, PhDa; Boada-Pladellorens, Anna MDa; Pages, Esther MD, PhDa; Dorca, Aleix PhDb; Sabria, Betlem PhDb; Pfeifer, Michael MDc; Gea, Elvira PharmDd,e
+							</p>
+							<a href="#" class="self-start font-semibold underline text-purplishBlue-500">Read more</a>
+						</div>
+
+						<!-- Post -->
+						<div class="flex flex-col space-y-3 flex-grow items-center max-w-[370px]">
+							<!-- Post Image -->
+							<img src="img/medical-student-with-yellow-folder-surgery-2x.png" class="w-full h-[240px] rounded-lg object-cover" />
+							<h2 class="font-semibold">Management of Primary Spondylodiscitis</h2>
+							<p class="block text-sm">
+								Avellanet, Merce MD, PhDa; Boada-Pladellorens, Anna MDa; Pages, Esther MD, PhDa; Dorca, Aleix PhDb; Sabria, Betlem PhDb; Pfeifer, Michael MDc; Gea, Elvira PharmDd,e
+							</p>
+							<a href="#" class="self-start font-semibold underline text-purplishBlue-500">Read more</a>
+						</div>
+						<!-- Post -->
+						<div class="flex flex-col space-y-3 flex-grow items-center max-w-[370px]">
+							<!-- Post Image -->
+							<img src="img/medical-student-with-yellow-folder-surgery-2x.png" class="w-full h-[240px] rounded-lg object-cover" />
+							<h2 class="font-semibold">Management of Primary Spondylodiscitis</h2>
+							<p class="block text-sm">
+								Avellanet, Merce MD, PhDa; Boada-Pladellorens, Anna MDa; Pages, Esther MD, PhDa; Dorca, Aleix PhDb; Sabria, Betlem PhDb; Pfeifer, Michael MDc; Gea, Elvira PharmDd,e
+							</p>
+							<a href="#" class="self-start font-semibold underline text-purplishBlue-500">Read more</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Spine Add Downloadable container -->
+				<div class="w-full mt-10">
+					<!-- Spine Add Downloadable -->
+					<div class="relative w-full h-full p-5 from-darkRed to-wineRed bg-gradient-to-l">
+						<!-- Description and download button -->
+						<div>
+							<p class="text-xs leading-5 text-white">We Spine is dedicated to returining you to an active lifestyle.</p>
+							<p class="text-xs leading-5 text-white">Each member of the spine team has contributed to this book and is.</p>
+
+							<button class="flex items-center justify-center px-4 py-2 mt-3 text-sm text-center bg-white rounded-lg shadow text-darkRed">Download pdf</button>
+						</div>
+
+						<img src="img/spine.png" class="absolute top-0 hidden w-32 h-32 sm:block sm:right-5 md:right-24" alt="" />
+					</div>
+				</div>
 			</section>
+			<footer class="flex flex-col w-full h-full mt-16 bg-purplishBlue-100 debug-screens">
+				<!-- footer body -->
+				<div class="grid grid-flow-row grid-cols-1 gap-8 p-6 xl:px-24 lg:grid-flow-col lg:grid-cols-4 xl:grid-cols-5">
+					<!-- Logo and Social media -->
+					<div class="flex flex-col space-y-5 lg:w-36">
+						<img class="w-24 h-full" src="img/logo.png" alt="WeSpine" />
+
+						<p class="text-xs">Keep your spine healthy keep your life healither.</p>
+						<div class="flex items-center space-x-3">
+							<a href="#">
+								<svg class="w-5 h-5 fill-current text-purplishBlue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<path
+										d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+									/>
+								</svg>
+							</a>
+							<a href="#"
+								><svg class="w-5 h-5 fill-current text-purplishBlue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+									<path
+										d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+									/></svg
+							></a>
+							<a href="#"
+								><svg class="w-5 h-5 fill-current text-purplishBlue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<path
+										d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+									/></svg
+							></a>
+							<a href="#"
+								><svg class="w-5 h-5 fill-current text-purplishBlue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+									<path
+										d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+									/></svg
+							></a>
+						</div>
+					</div>
+
+					<!-- Home menu -->
+					<div class="flex flex-col">
+						<h3 class="mb-3 text-purplishBlue-500">We Spine</h3>
+						<a class="text-xs text-gray-900" href="#">Home</a>
+						<a class="text-xs text-gray-900" href="#">Our Team</a>
+						<a class="text-xs text-gray-900" href="#">Help</a>
+						<a class="text-xs text-gray-900" href="#">Contact</a>
+					</div>
+
+					<!-- Opeening hours -->
+					<div class="flex flex-col">
+						<h3 class="mb-3 text-purplishBlue-500">Openning hours</h3>
+						<p class="text-xs">From 2:00AM - 9PM</p>
+						<p class="text-xs">Sunday to Friday</p>
+					</div>
+
+					<!-- say Hello -->
+					<div class="flex flex-col">
+						<h3 class="mb-3 text-purplishBlue-500">Say hello</h3>
+						<p class="text-xs">hello@wespine.com</p>
+					</div>
+
+					<!-- mail listing -->
+					<div class="flex flex-col items-center">
+						<h3 class="text-purplishBlue-500">Join our mail listing</h3>
+						<div class="relative flex py-1 pl-1 pr-5 mt-3 space-x-3 bg-white rounded-lg ring-purplishBlue-500 group">
+							<input class="p-1 outline-none ring-0" placeholder="your@email.com" type="text" name="" id="" />
+							<button class="text-sm bg-white text-purplishBlue-500 group-focus:ring-2 group-focus:ring-purplishBlue-500">subscirbe</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Copyright -->
+				<div class="flex items-center justify-center flex-grow py-3 bg-purplishBlue-500">
+					<p class="text-xs text-gray-100 md:text-sm">(C) Copyright 2021 - We Spine. All rights reserved.</p>
+				</div>
+			</footer>
 		</main>
 	</body>
 </html>

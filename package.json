@@ -1,19 +1,20 @@
 {
-  "name": "wespine",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vite"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.3.11",
-    "tailbuild": "^1.1.1",
-    "tailwindcss": "^2.2.19",
-    "vite": "^2.6.14"
-  }
+	"name": "wespine",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "vite",
+		"compile-dev": "tailbuild --files='./public/**/*.html' ./css/tailwind.css -o ./public/dist/styles.css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.4.0",
+		"postcss": "^8.3.11",
+		"tailbuild": "^1.1.1",
+		"tailwindcss": "^2.2.19",
+		"vite": "^2.6.14"
+	}
 }

@@ -12,7 +12,7 @@
 	</head>
 	<body class="bg-white">
 		<!-- Debug border-2 border-red-500 -->
-		<main class="flex flex-col w-screen h-screen overflow-x-hidden debug-screens">
+		<main class="flex flex-col overflow-hidden debug-screens">
 			<!-- Navbar -->
 			<nav class="flex items-center justify-between flex-grow px-5 py-2 xl:px-20">
 				<!-- Logo -->
@@ -50,125 +50,255 @@
 				</div>
 			</nav>
 
-			<!-- Secondary nav -->
-			<div class="flex items-center w-full px-4 py-4 space-x-4 overflow-x-scroll no-scrollbar lg:px-20 lg:py-5 lg:space-x-10 bg-purplishBlue-500">
-				<a href="#" class="text-xs tracking-wide text-gray-100 whitespace-nowrap secondary-menu-active">Who are we?</a>
-				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">Our Concept</a>
-				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">Prevention</a>
-				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">Diagnosis</a>
-				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">Thearpy</a>
-				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">After Care</a>
-				<a href="#" class="mb-1 text-xs tracking-wide text-gray-100 whitespace-nowrap">Our Team</a>
+			<div class="flex items-center w-full px-4 py-2 space-x-4 overflow-x-scroll no-scrollbar lg:px-20 lg:space-x-10 bg-purplishBlue-500">
+				<a href="#" class="text-xs tracking-wide text-gray-100 whitespace-nowrap secondary-menu-active secondary-active">Who are we?</a>
+				<a href="#" onclick="scrollToElement('video-1')" class="text-xs tracking-wide text-gray-100 whitespace-nowrap secondary-underline-hover">Our Concept</a>
+				<a href="#" onclick="scrollToElement('video-2')" class="text-xs tracking-wide text-gray-100 whitespace-nowrap secondary-underline-hover">Prevention</a>
+				<a href="#" onclick="scrollToElement('video-3')" class="text-xs tracking-wide text-gray-100 whitespace-nowrap secondary-underline-hover">Diagnosis</a>
+				<a href="#" onclick="scrollToElement('video-4')" class="text-xs tracking-wide text-gray-100 whitespace-nowrap secondary-underline-hover">Thearpy</a>
+				<a href="#" onclick="scrollToElement('video-5')" class="text-xs tracking-wide text-gray-100 whitespace-nowrap secondary-underline-hover">After Care</a>
+				<a href="#" class="text-xs tracking-wide text-gray-100 whitespace-nowrap secondary-underline-hover">Our Team</a>
 			</div>
 
 			<!-- Hero -->
-			<div style="background: url(img/hero.png); background-size: cover" class="relative w-full min-h-screen">
+			<div
+				style="
+					background-size: cover;
+					background: url(img/hero.png) no-repeat center center fixed;
+					-webkit-background-size: cover;
+					-moz-background-size: cover;
+					-o-background-size: cover;
+					background-size: cover;
+				"
+				class="relative w-full min-h-screen"
+			>
 				<!-- Overlay -->
-				<div class="absolute inset-0 w-full h-full overflow-hidden opacity-60 to-transparent from-black bg-gradient-to-r"></div>
+				<div class="absolute inset-0 w-full h-screen opacity-60 to-transparent from-black bg-gradient-to-r"></div>
 
-				<div class="relative flex justify-center w-full h-full px-4 pt-16 overflow-hidden md:px-0">
-					<!-- Modal -->
-					<div class="w-full max-w-[34rem] bg-white p-4 flex justify-between flex-col rounded-lg max-h-[20rem]">
-						<!-- Video -->
-						<iframe
-							class="w-full h-full rounded-md"
-							src="https://www.youtube.com/embed/RNUpMNd_u1U"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
+				<div class="relative flex flex-col w-full h-screen px-4 pt-16 overflow-y-hidden md:px-0">
+					<div class="flex flex-col items-center overflow-y-scroll space-y-96 no-scrollbar">
+						<!-- Modal -->
+						<div id="video-1" class="w-full max-w-[34rem] bg-white p-4 flex justify-between flex-col rounded-lg min-h-[20rem] max-h-[20rem]">
+							<!-- Video -->
+							<iframe
+								class="w-full h-full rounded-md"
+								src="https://www.youtube.com/embed/RNUpMNd_u1U"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
 
-						<!-- slung -->
-						<div class="flex items-center justify-center w-full pt-2 space-x-2 text-center">
-							<h2 class="text-xs md:text-base">Watch the short video to know how we spine</h2>
+							<!-- slung -->
+							<div class="flex items-center justify-center w-full pt-2 space-x-2 text-center">
+								<h2 class="text-xs md:text-base">Watch the short video to know how we spine</h2>
 
-							<a class="text-xs text-blue-600" href="#">Read more</a>
+								<a class="text-xs text-blue-600" href="#">Read more</a>
+							</div>
+						</div>
+						<!-- Modal -->
+						<div id="video-2" class="w-full max-w-[34rem] bg-white p-4 flex justify-between flex-col rounded-lg min-h-[20rem] max-h-[20rem]">
+							<!-- Video -->
+							<iframe
+								class="w-full h-full rounded-md"
+								src="https://www.youtube.com/embed/RNUpMNd_u1U"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+
+							<!-- slung -->
+							<div class="flex items-center justify-center w-full pt-2 space-x-2 text-center">
+								<h2 class="text-xs md:text-base">Watch the short video to know how we spine</h2>
+
+								<a class="text-xs text-blue-600" href="#">Read more</a>
+							</div>
+						</div>
+						<!-- Modal -->
+						<div id="video-3" class="w-full max-w-[34rem] bg-white p-4 flex justify-between flex-col rounded-lg min-h-[20rem] max-h-[20rem]">
+							<!-- Video -->
+							<iframe
+								class="w-full h-full rounded-md"
+								src="https://www.youtube.com/embed/RNUpMNd_u1U"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+
+							<!-- slung -->
+							<div class="flex items-center justify-center w-full pt-2 space-x-2 text-center">
+								<h2 class="text-xs md:text-base">Watch the short video to know how we spine</h2>
+
+								<a class="text-xs text-blue-600" href="#">Read more</a>
+							</div>
+						</div>
+						<!-- Modal -->
+						<div id="video-4" class="w-full max-w-[34rem] bg-white p-4 flex justify-between flex-col rounded-lg min-h-[20rem] max-h-[20rem]">
+							<!-- Video -->
+							<iframe
+								class="w-full h-full rounded-md"
+								src="https://www.youtube.com/embed/RNUpMNd_u1U"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+
+							<!-- slung -->
+							<div class="flex items-center justify-center w-full pt-2 space-x-2 text-center">
+								<h2 class="text-xs md:text-base">Watch the short video to know how we spine</h2>
+
+								<a class="text-xs text-blue-600" href="#">Read more</a>
+							</div>
+						</div>
+						<!-- Modal -->
+						<div id="video-5" class="w-full max-w-[34rem] bg-white p-4 flex justify-between flex-col rounded-lg min-h-[20rem] max-h-[20rem]">
+							<!-- Video -->
+							<iframe
+								class="w-full h-full rounded-md"
+								src="https://www.youtube.com/embed/RNUpMNd_u1U"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+
+							<!-- slung -->
+							<div class="flex items-center justify-center w-full pt-2 space-x-2 text-center">
+								<h2 class="text-xs md:text-base">Watch the short video to know how we spine</h2>
+
+								<a class="text-xs text-blue-600" href="#">Read more</a>
+							</div>
 						</div>
 					</div>
+				</div>
+
+				<!-- Socail media -->
+				<div class="absolute right-0 flex flex-col items-center p-3 space-y-5 bg-gray-900 rounded-l-sm bg-opacity-30 w-14 top-20">
+					<a href="#">
+						<svg class="w-5 h-5 text-gray-100 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path
+								d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+							/>
+						</svg>
+					</a>
+
+					<a href="#"
+						><svg class="w-5 h-5 text-gray-100 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path
+								d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+							/></svg
+					></a>
+					<a href="#"
+						><svg class="w-5 h-5 text-gray-100 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+							<path
+								d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+							/></svg
+					></a>
+
+					<a href="#"
+						><svg class="w-5 h-5 text-gray-100 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+							<path
+								d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+							/></svg
+					></a>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-100 fill-current" version="1.1" viewBox="0 0 24 24">
+							<path
+								d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"
+							/>
+						</svg>
+					</a>
 				</div>
 
 				<!-- Join Button -->
-				<div class="absolute flex flex-col items-center justify-center w-full space-y-2 bottom-5">
+				<div class="absolute flex flex-col items-center justify-center w-full space-y-2 bottom-[6.5rem]">
 					<p class="text-sm text-gray-100">Join the We Spine Club</p>
-					<button class="px-5 py-2 text-xs bg-gray-100 rounded text-purplishBlue-500 hover:bg-wineRed hover:text-gray-100 hover:cursor-pointer">Join Now</button>
+					<button onclick="showJoinUsModal()" class="px-5 py-2 text-xs bg-gray-100 rounded text-purplishBlue-500 hover:bg-wineRed hover:text-gray-100 hover:cursor-pointer">Join Now</button>
+				</div>
+
+				<!-- Join us modal -->
+				<div id="join-us" class="absolute hidden h-[90%] top-4 left-10 w-[90%]">
+					<!-- Section 1 -->
+					<div class="w-[60%] h-full flex flex-col rounded-br-lg bg-purplishBlue-500">
+						<!-- Image and title -->
+						<div class="flex flex-col h-full pt-10 pl-20 pr-10">
+							<h1 class="text-xl text-gray-100 w-44">Get the latest news & Reviews</h1>
+
+							<img
+								class="w-[750px] h-[300px] shadow-lg mb-5 object-cover rounded-lg mt-5"
+								src="img/adult-man-trains-muscle-strength-with-professional-doctor-modern-rehabilitation-clinic-phy.png"
+								alt=""
+							/>
+						</div>
+
+						<!-- Footer -->
+						<div class="flex flex-col h-full space-y-10 bg-wineRed">
+							<div class="flex items-center justify-center w-full pt-5 space-x-3">
+								<p class="mr-3 text-sm font-medium text-gray-100">We Spine We Care</p>
+								<p class="text-sm font-medium text-gray-100">Diagnosis</p>
+								<p class="text-sm font-medium text-gray-100">|</p>
+								<p class="text-sm font-medium text-gray-100">Prevension</p>
+								<p class="text-sm font-medium text-gray-100">|</p>
+								<p class="text-sm font-medium text-gray-100">Therapy</p>
+								<p class="text-sm font-medium text-gray-100">|</p>
+								<p class="text-sm font-medium text-gray-100">After care</p>
+							</div>
+							<p class="text-sm font-medium text-center text-gray-100">info@wespine.com</p>
+						</div>
+					</div>
+					<!-- Section 2 -->
+					<div class="w-[40%] h-full bg-white flex items-center flex-col py-10">
+						<h2 class="text-lg text-gray-900">Join We Spine Club...</h2>
+						<p class="w-full max-w-xs mt-2 text-xs text-center text-gray-900">Join now and receive medical extensive content for on new medical spine tips</p>
+
+						<form class="flex flex-col items-center h-full mt-5 space-y-8 w-72">
+							<input type="text" name="name" placeholder="Name" class="block w-full text-sm font-medium border-b-2 border-gray-900 outline-none focus:border-wineRed" />
+							<input type="text" name="email" placeholder="Email" class="block w-full text-sm font-medium border-b-2 border-gray-900 outline-none focus:border-wineRed" />
+							<input type="text" name="mobile" placeholder="Mobile Number" class="block w-full text-sm font-medium border-b-2 border-gray-900 outline-none focus:border-wineRed" />
+							<input type="text" name="date" placeholder="Date of birth" class="block w-full text-sm font-medium border-b-2 border-gray-900 outline-none focus:border-wineRed" />
+
+							<button
+								onclick="showFinishModal()"
+								type="button"
+								class="flex items-center justify-center w-40 p-2 !mt-16 text-white border rounded hover:bg-white hover:text-wineRed border-wineRed bg-wineRed"
+							>
+								Submit
+							</button>
+						</form>
+					</div>
+				</div>
+
+				<div id="finish" class="absolute hidden flex-col items-center justify-center bg-wineRed rounded-lg h-[70%] top-5 left-44 w-[70%]">
+					<h1 class="text-lg font-semibold text-white">Thank you for joining We Spine Club</h1>
+					<img src="img/logo.png" class="h-16 my-10" alt="" />
+					<p class="w-full max-w-sm text-xs text-center text-white">
+						We Spine Service is detectated to retrun you to the normal lifestyle. Each member of the spine team has contributed to the book and is.
+					</p>
+					<button class="flex items-center justify-center w-40 p-2 !mt-5 text-wineRed border rounded hover:bg-wineRed hover:text-white border-white bg-white">Download PDF</button>
 				</div>
 			</div>
-
-			<footer class="flex flex-col w-full h-full mt-16 bg-purplishBlue-100 debug-screens">
-				<!-- footer body -->
-				<div class="grid grid-flow-row grid-cols-1 gap-8 p-6 xl:px-24 lg:grid-flow-col lg:grid-cols-4 xl:grid-cols-5">
-					<!-- Logo and Social media -->
-					<div class="flex flex-col space-y-5 lg:w-36">
-						<img class="w-24 h-full" src="img/logo.png" alt="WeSpine" />
-
-						<p class="text-xs">Keep your spine healthy keep your life healither.</p>
-						<div class="flex items-center space-x-3">
-							<a href="#">
-								<svg class="w-5 h-5 fill-current text-purplishBlue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-									<path
-										d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-									/>
-								</svg>
-							</a>
-							<a href="#"
-								><svg class="w-5 h-5 fill-current text-purplishBlue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-									<path
-										d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-									/></svg
-							></a>
-							<a href="#"
-								><svg class="w-5 h-5 fill-current text-purplishBlue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-									<path
-										d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-									/></svg
-							></a>
-							<a href="#"
-								><svg class="w-5 h-5 fill-current text-purplishBlue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-									<path
-										d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
-									/></svg
-							></a>
-						</div>
-					</div>
-
-					<!-- Home menu -->
-					<div class="flex flex-col">
-						<h3 class="mb-3 text-purplishBlue-500">We Spine</h3>
-						<a class="text-xs text-gray-900" href="#">Home</a>
-						<a class="text-xs text-gray-900" href="#">Our Team</a>
-						<a class="text-xs text-gray-900" href="#">Help</a>
-						<a class="text-xs text-gray-900" href="#">Contact</a>
-					</div>
-
-					<!-- Opeening hours -->
-					<div class="flex flex-col">
-						<h3 class="mb-3 text-purplishBlue-500">Openning hours</h3>
-						<p class="text-xs">From 2:00AM - 9PM</p>
-						<p class="text-xs">Sunday to Friday</p>
-					</div>
-
-					<!-- say Hello -->
-					<div class="flex flex-col">
-						<h3 class="mb-3 text-purplishBlue-500">Say hello</h3>
-						<p class="text-xs">hello@wespine.com</p>
-					</div>
-
-					<!-- mail listing -->
-					<div class="flex flex-col items-center">
-						<h3 class="text-purplishBlue-500">Join our mail listing</h3>
-						<div class="relative flex py-1 pl-1 pr-5 mt-3 space-x-3 bg-white rounded-lg ring-purplishBlue-500 group">
-							<input class="p-1 outline-none ring-0" placeholder="your@email.com" type="text" name="" id="" />
-							<button class="text-sm bg-white text-purplishBlue-500 group-focus:ring-2 group-focus:ring-purplishBlue-500">subscirbe</button>
-						</div>
-					</div>
-				</div>
-
-				<!-- Copyright -->
-				<div class="flex items-center justify-center flex-grow py-3 bg-purplishBlue-500">
-					<p class="text-xs text-gray-100 md:text-sm">(C) Copyright 2021 - We Spine. All rights reserved.</p>
-				</div>
-			</footer>
 		</main>
+
+		<script>
+			function scrollToElement(id) {
+				var element = document.getElementById(id);
+
+				console.log(element);
+				element.scrollIntoView({ behavior: 'smooth' });
+			}
+			function showJoinUsModal() {
+				console.log(document.getElementById('join-us').classList);
+				document.getElementById('join-us').classList.remove('hidden');
+				document.getElementById('join-us').classList.add('flex');
+			}
+			function showFinishModal() {
+				document.getElementById('finish').classList.remove('hidden');
+				document.getElementById('finish').classList.add('flex');
+				document.getElementById('join-us').classList.add('hidden');
+			}
+		</script>
 	</body>
 </html>

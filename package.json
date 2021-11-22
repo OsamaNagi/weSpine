@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "vite",
-		"compile-dev": "tailbuild --files='./public/**/*.html' ./css/tailwind.css -o ./public/dist/styles.css"
+		"compile-dev": "tailbuild public/css/styles.css css/tailwind.css --files='public/**/*.html'"
 	},
 	"keywords": [],
 	"author": "",

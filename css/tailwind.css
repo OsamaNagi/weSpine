@@ -15,4 +15,14 @@
         scrollbar-width: none;  /* Firefox */
     }
   }
+
+    .secondary-active {
+    @apply after:flex after:w-full after:h-[2px] after:mt-[1px] after:bg-white;
+    }
+
+
+    .secondary-underline-hover {
+    @apply hover:after:flex hover:after:w-full hover:after:h-[2px] hover:after:mt-[1px] hover:after:bg-white;
+    }
+
 }

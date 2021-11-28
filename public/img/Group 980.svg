@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="90" viewBox="0 0 90 90">
+  <defs>
+    <filter id="Ellipse_2" x="0" y="0" width="90" height="90" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_980" data-name="Group 980" transform="translate(9 6)">
+    <g id="Group_8" data-name="Group 8">
+      <g id="Group_6" data-name="Group 6" transform="translate(0 0)">
+        <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_2)">
+          <circle id="Ellipse_2-2" data-name="Ellipse 2" cx="36" cy="36" r="36" transform="translate(9 6)" fill="#a61010" opacity="0.59"/>
+        </g>
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="35" cy="35" r="35" transform="translate(1 1)" fill="#a61010" opacity="0.59"/>
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="34" cy="34" r="34" transform="translate(2 2)" fill="#a61010"/>
+      </g>
+      <path id="Icon_metro-youtube-play" data-name="Icon metro-youtube-play" d="M21.136,15.893a.835.835,0,0,0-.435-.783l-7.426-4.641a.874.874,0,0,0-.943-.029.864.864,0,0,0-.479.812v9.282a.864.864,0,0,0,.479.812,1,1,0,0,0,.45.116.826.826,0,0,0,.493-.145L20.7,16.676a.835.835,0,0,0,.435-.783Zm7.426,0q0,1.392-.014,2.176t-.123,1.98a16.044,16.044,0,0,1-.326,2.139,3.393,3.393,0,0,1-1,1.784,3.058,3.058,0,0,1-1.8.841,95.088,95.088,0,0,1-9.732.363,95.088,95.088,0,0,1-9.732-.363,3.092,3.092,0,0,1-1.806-.841A3.372,3.372,0,0,1,3.02,22.187a17.953,17.953,0,0,1-.312-2.139q-.109-1.2-.123-1.98t-.014-2.176q0-1.392.014-2.176t.123-1.98A16.043,16.043,0,0,1,3.035,9.6a3.393,3.393,0,0,1,1-1.784,3.058,3.058,0,0,1,1.8-.841,95.088,95.088,0,0,1,9.732-.363,95.086,95.086,0,0,1,9.732.363,3.091,3.091,0,0,1,1.806.841A3.372,3.372,0,0,1,28.112,9.6a17.954,17.954,0,0,1,.312,2.139q.109,1.2.123,1.98T28.562,15.893Z" transform="translate(20.442 19.944)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
